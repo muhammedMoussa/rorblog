@@ -14,6 +14,7 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "New Post"
 
+    fill_in "Body", with: @post.body
     fill_in "Description", with: @post.description
     fill_in "Slug", with: @post.slug
     fill_in "Title", with: @post.title
@@ -27,6 +28,7 @@ class PostsTest < ApplicationSystemTestCase
     visit posts_url
     click_on "Edit", match: :first
 
+    fill_in "Body", with: @post.body
     fill_in "Description", with: @post.description
     fill_in "Slug", with: @post.slug
     fill_in "Title", with: @post.title

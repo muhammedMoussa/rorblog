@@ -1,0 +1,19 @@
+<%= provide(:page_title, @post.title) %>
+<%= provide(:author, 'active') %>
+<div>
+  <%= link_to 'Edit', edit_author_post_path(@post), class: 'btn btn-lg btn-warning' %>
+  <%=
+    link_to 'Remove', author_post_path(@post),
+    method: :delete, data: { confirm: 'Are you sure to remove?'},
+    class: 'btn btn-lg btn-danger' %>
+</div>
+<div class="row">
+  <div class="container">
+    <h1><%= @post.title %></h1>
+    <p><%= @post.publish_day %></p>
+    <%= @post.body %>
+  </div>
+</div>
+
+<%# <%= link_to 'Edit', edit_post_path(@post) %>
+<%= link_to 'Back', posts_path %>

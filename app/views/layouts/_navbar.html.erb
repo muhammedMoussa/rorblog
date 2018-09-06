@@ -1,4 +1,4 @@
-<div class="collapse" id="exCollapsingNavbar">
+<!--<div class="collapse" id="exCollapsingNavbar">
   <div class="collapse-bg p-a-1">
     <div class='card'>
       <ul class="list-group list-group-flush">
@@ -11,11 +11,14 @@
         <li class="list-group-item">
           <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
         </li>
+        <li class="list-group-item">
+          <%= link_to 'My Posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
+        </li>
       </ul>
     </div>
   </div>
 </div>
-
+-->
 <nav class="navbar navbar-light bg-faded">
   <div class='container'>
     <a class='navbar-brand' href='/'>
@@ -31,7 +34,9 @@
       <li class="nav-item">
         <%= link_to 'Contact', contact_path, class: "nav-link #{yield(:contact_active)}" %>
       </li>
-
+      <li class="nav-item">
+        <%= link_to 'My Posts', author_posts_path, class: "nav-link #{yield(:author)}" %>
+      </li>
     </ul>
   </div>
 </nav>

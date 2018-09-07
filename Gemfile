@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 # Bootstrap
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
+gem 'devise'
 # Friendly id
 gem 'friendly_id', '~> 5.2.0'
 # Use CoffeeScript for .coffee assets and views

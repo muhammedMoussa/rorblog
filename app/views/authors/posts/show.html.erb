@@ -8,10 +8,10 @@
     class: 'btn btn-lg btn-danger' %>
 </div>
 <div class="row">
-  <div class="container">
+  <div class="container "> 
     <h1><%= @post.title %></h1>
     <p><%= @post.publish_day %></p>
-    <%= @post.body %>
+    <%= @post.body.html_safe %>
   </div>
 </div>
 

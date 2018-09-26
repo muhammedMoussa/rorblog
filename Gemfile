@@ -20,6 +20,8 @@ gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'annotate'
+gem 'will_paginate', '~> 3.1.0'
+
 # Friendly id
 gem 'friendly_id', '~> 5.2.0'
 # Use CoffeeScript for .coffee assets and views

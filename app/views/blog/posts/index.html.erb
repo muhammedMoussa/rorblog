@@ -4,6 +4,9 @@
 <div class="row">
   <%= render @posts %>
 </div>
+  <div class="pagination apple_pagination">
+    <%= will_paginate @posts, container: false %>
+  </div>
 <br>
 <%#
 <%= link_to 'New Post', new_post_path %>

@@ -30,9 +30,12 @@ class Post < ApplicationRecord
     end
 
     def publish_day
-      "Published #{published_at.strftime('%-b %-d, %Y')}"
+        if published_at.present?
+            "Published #{published_at.strftime('%-b %-d, %Y')}"
+        else
+            "Not Published Yet"
+        end
     end
-
     def publish
       update(published: true, published_at: Time.now)
     end

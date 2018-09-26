@@ -1,6 +1,9 @@
 $light-gray: #f7f7f9;
 
 .posts.index {
+  .pagination {
+    display: block;
+  }
   .card {
     border: none;
     border-radius: 0;

@@ -23,7 +23,7 @@ class Post < ApplicationRecord
 
   belongs_to :author
 
-  PER_PAGE = 3
+  PER_PAGE = 6
 
   scope :most_recent, -> { order(published_at: :desc) }
   scope :published, -> { where(published: true) }
@@ -38,7 +38,7 @@ class Post < ApplicationRecord
     title_changed?
   end
 
-  def publish_day
+  def display_day_published
     if published_at.present?
       "Published #{published_at.strftime('%-b %-d, %Y')}"
     else

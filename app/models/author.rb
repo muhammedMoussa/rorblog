@@ -26,4 +26,14 @@ class Author < ApplicationRecord
            password_confirmation: attrs[:new_password_confirmation])
   end
 
+  def gravatar_image_url
+    "https://www.gravatar.com/avatar/#{gravatar_hash}"
+  end
+
+  private
+
+  def gravatar_hash
+    Digest::MD5.hexdigest(email.downcase)
+  end
+
 end

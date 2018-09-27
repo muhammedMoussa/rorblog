@@ -18,6 +18,12 @@ class Author < ApplicationRecord
   # :confirmable, :lockable, :registerable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable
-
   has_many :posts
+  validates_presence_of :name, on: :update
+
+  def change_password(attrs)
+    update(password: attrs[:new_password],
+           password_confirmation: attrs[:new_password_confirmation])
+  end
+
 end

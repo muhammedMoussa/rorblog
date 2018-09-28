@@ -19,7 +19,7 @@ class Author < ApplicationRecord
   devise :database_authenticatable,
          :recoverable, :rememberable, :validatable
   has_many :posts
-  validates_presence_of :name, on: :update
+  # validates_presence_of :name, on: :update
 
   def change_password(attrs)
     update(password: attrs[:new_password],
@@ -28,6 +28,14 @@ class Author < ApplicationRecord
 
   def gravatar_image_url
     "https://www.gravatar.com/avatar/#{gravatar_hash}"
+  end
+
+  def display_username
+    if name.present?
+      name
+    else
+      "Author"
+    end
   end
 
   private

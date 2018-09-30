@@ -45,6 +45,7 @@ Rorblog is currently extended with the following plugins. Instructions on how to
 | Annotate | [https://github.com/ctran/annotate_models] |
 | Will Paginate | [https://github.com/mislav/will_paginate] |
 | ActsAsTaggableOn | [https://github.com/mbleigh/acts-as-taggable-on] |
+| TinyMCE | [https://www.tiny.cloud/] |
 | Bootstrap | [https://getbootstrap.com/] |
 | Disqus | [https://disqus.com/] |
 

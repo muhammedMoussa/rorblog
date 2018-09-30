@@ -1,24 +1,59 @@
-# README
+# Rorblog :tada: 
+> Note: To run this app,make sure you have ruby, rails and sqlite3 installed on your machine first.
+You can check [Rails guide](https://guides.rubyonrails.org/getting_started.html) - To install.
+| Ui of this app made with [Bootstrap 4](https://getbootstrap.com/) components .
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# App Features! :star2:	
+- User authentication.
+- Rich text editor when write posts can add images, videos, links, code snippet and more.
+- Edit post anytime with the same text editor.
+- Publish and Unpublish posts option.
+- Pagination.
+- Posts tags.
+- Commenting system with Disqus.
+- Post Reactions!
+- Account management.
+- Reactive flash messages.
 
-Things you may want to cover:
+### Runing Rorblog! :fire:
+After install all above mentioned stuff! 
+```sh
+$ cd rorblog
+$ bundle install 
+$ rails server 
+```
+### Login :door:
+Ue can use rails cli to create user after reading schema, or Using this temp account!
 
-* Ruby version
+> emial: muhammed@test.com <br />
+> password: muhammed
 
-* System dependencies
 
-* Configuration
+### Todos :fast_forward:
 
-* Database creation
+- Adding signup page.
+- Social media websites login.
 
-* Database initialization
 
-* How to run the test suite
+### Plugins :briefcase:
 
-* Services (job queues, cache servers, search engines, etc.)
+Rorblog is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
 
-* Deployment instructions
+| Plugin | README |
+| ------ | ------ |
+| Devise | [https://github.com/plataformatec/devise] |
+| Annotate | [https://github.com/ctran/annotate_models] |
+| Will Paginate | [https://github.com/mislav/will_paginate] |
+| ActsAsTaggableOn | [https://github.com/mbleigh/acts-as-taggable-on] |
+| Bootstrap | [https://getbootstrap.com/] |
+| Disqus | [https://disqus.com/] |
 
-* ...
+#### 
+
+Find me on [Twitter](https://twitter.com/muhammedMoussa), thank to the teacher [@stephenfiser](https://twitter.com/stephenfiser).
+
+License :shipit:
+----
+MIT 
+
+:open_hands:
